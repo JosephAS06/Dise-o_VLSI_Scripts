@@ -57,7 +57,7 @@ set_pg_strategy  std_rail_1 -pattern {{name : std_rail_conn1} {nets: "VDD VSS"}}
 # PADS DE VDD/VSS (PUEDE AGREGAR MÁS SI LO CONSIDERA NECESARIO)
 ##########################################################################################
 set_virtual_pad -net VDD -coordinate {-5 -5} -layer M6
-set_virtual_pad -net VSS -coordinate {455 525} -layer M6
+set_virtual_pad -net VSS -coordinate {485 525} -layer M6
 
 compile_pg -strategies std_rail_1
 
