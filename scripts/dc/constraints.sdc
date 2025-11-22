@@ -1,5 +1,5 @@
 #GENERACION DE CLOCKS
-create_clock -period 1.5 -waveform "0 0.075" [get_ports brd_clk_p] -name BRD_CLK_P
+create_clock -period 1.45 -waveform "0 0.725" [get_ports brd_clk_p] -name BRD_CLK_P
 
 ## NO MODIFICAR CLKS DE MODULO ETHERNET
 create_clock -period 40 -waveform "0 20" [get_ports mtx_clk_pad_i] -name mtx_clk

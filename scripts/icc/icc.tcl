@@ -4,23 +4,23 @@
 set DESIGN_NAME system
 set REPORTS_DIR reports
 set RESULTS_DIR results
-set SCRIPTS_DIR "/home/JOSEPH.ALVAREZ/ie0411/proyecto/scripts" ; # DONDE SEA QUE COPIARON LOS SCRIPTS
-set SDC_FILE "/home/JOSEPH.ALVAREZ/ie0411/proyecto/WORK/results/system.sdc" ; # ESTE ARCHIVO ES EL GENERADO POR SINTESIS, NO EL DADO POR EL PROFESOR PARA INICIAR SINTESIS
-set WDIR "/home/JOSEPH.ALVAREZ/ie0411/proyecto/WORK" ; #ES NECESARIO MODIFICAR AL HOME USUARIO CORRECTO
+set SCRIPTS_DIR "/home/JOSEPH.ALVAREZ/ie0411/proyecto_loco/scripts" ; # DONDE SEA QUE COPIARON LOS SCRIPTS
+set SDC_FILE "/home/JOSEPH.ALVAREZ/ie0411/proyecto_loco/WORK/results/system.sdc" ; # ESTE ARCHIVO ES EL GENERADO POR SINTESIS, NO EL DADO POR EL PROFESOR PARA INICIAR SINTESIS
+set WDIR "/home/JOSEPH.ALVAREZ/ie0411/proyecto_loco/WORK" ; #ES NECESARIO MODIFICAR AL HOME USUARIO CORRECTO
 set TOP ${WDIR}/..
-set gate_verilog "/home/JOSEPH.ALVAREZ/ie0411/proyecto/WORK/results/system.v" ; #ES NECESARIO MODIFICAR AL PATH CORRECTO
+set gate_verilog "/home/JOSEPH.ALVAREZ/ie0411/proyecto_loco/WORK/results/system.v" ; #ES NECESARIO MODIFICAR AL PATH CORRECTO
 
 ##########################################################################################
 # CONFIGURACIONES GENERALES
 ##########################################################################################
-set COMMON_SETUP_SCRIPT "/home/JOSEPH.ALVAREZ/ie0411/proyecto/scripts/icc/common_setup.tcl"
+set COMMON_SETUP_SCRIPT "/home/JOSEPH.ALVAREZ/ie0411/proyecto_loco/scripts/icc/common_setup.tcl"
 source $COMMON_SETUP_SCRIPT
 
 ###################################################################################
 # INICIALIZACIÓN DE LA LIBRERÍA
 ###################################################################################
 
-set_host_options -max_cores 10
+set_host_options -max_cores 16
 
 set link_library   $LINK_LIBRARY_FILES
 set target_library $TARGET_LIBRARY_FILES
@@ -96,34 +96,34 @@ read_sdc $SDC_FILE
 save_block -as ${DESIGN}_1_imported
 
 ##########################################################################################
-# FLOORPLAN
+## FLOORPLAN
 ##########################################################################################
-source ${SCRIPTS_DIR}/icc/floorplan.tcl
-save_block -as ${DESIGN}_2_post_floorplan
+#source ${SCRIPTS_DIR}/icc/floorplan.tcl
+#save_block -as ${DESIGN}_2_post_floorplan
 
 ##########################################################################################
 # DISTRIBUCIÓN DE POTENCIA
 ##########################################################################################
-source ${SCRIPTS_DIR}/icc/powerplan.tcl
-save_block -as ${DESIGN}_3_post_power
+#source ${SCRIPTS_DIR}/icc/powerplan.tcl
+#save_block -as ${DESIGN}_3_post_power
 
 ##########################################################################################
 # POSICIONAMIENTO
 ##########################################################################################
-source ${SCRIPTS_DIR}/icc/placement.tcl
-save_block -as ${DESIGN}_4_post_place
+#source ${SCRIPTS_DIR}/icc/placement.tcl
+#save_block -as ${DESIGN}_4_post_place
 
 ##########################################################################################
 # SÍNTESIS DE ÁRBOL DE RELOJ
 ##########################################################################################
-source ${SCRIPTS_DIR}/icc/cts.tcl
-save_block -as ${DESIGN}_5_post_cts
+#source ${SCRIPTS_DIR}/icc/cts.tcl
+#save_block -as ${DESIGN}_5_post_cts
 
 ##########################################################################################
 # ENRUTAMIENTO
 ##########################################################################################
-source ${SCRIPTS_DIR}/icc/routing.tcl
-save_block -as ${DESIGN}_6_post_route
+#source ${SCRIPTS_DIR}/icc/routing.tcl
+#save_block -as ${DESIGN}_6_post_route
 
 ##########################################################################################
 # ECO

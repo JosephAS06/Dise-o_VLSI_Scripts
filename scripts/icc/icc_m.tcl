@@ -1,31 +1,42 @@
-set_host_options -max_cores 10
+set_host_options -max_cores 16
 
 ##########################################################################################
-# FLOORPLAN
+## FLOORPLAN
 ##########################################################################################
-source ../scripts/icc/floorplan.tcl
+source ${SCRIPTS_DIR}/icc/floorplan.tcl
 save_block -as ${DESIGN}_2_post_floorplan
 
 ##########################################################################################
 # DISTRIBUCIÓN DE POTENCIA
 ##########################################################################################
-source ../scripts/icc/powerplan.tcl
+source ${SCRIPTS_DIR}/icc/powerplan.tcl
 save_block -as ${DESIGN}_3_post_power
 
 ##########################################################################################
 # POSICIONAMIENTO
 ##########################################################################################
-source ../scripts/icc/placement.tcl
+source ${SCRIPTS_DIR}/icc/placement.tcl
 save_block -as ${DESIGN}_4_post_place
 
 ##########################################################################################
 # SÍNTESIS DE ÁRBOL DE RELOJ
 ##########################################################################################
-source ../scripts/icc/cts.tcl
+source ${SCRIPTS_DIR}/icc/cts.tcl
 save_block -as ${DESIGN}_5_post_cts
 
 ##########################################################################################
 # ENRUTAMIENTO
 ##########################################################################################
-source ../scripts/icc/routing.tcl
+source ${SCRIPTS_DIR}/icc/routing.tcl
 save_block -as ${DESIGN}_6_post_route
+
+##########################################################################################
+# ECO
+##########################################################################################
+#source ${SCRIPTS_DIR}/icc/eco.tcl
+#save_block -as ${DESIGN}_7_post_eco
+
+##########################################################################################
+# GENERACIÓN DE RESULTADOS
+#########################################################################################
+#source ${SCRIPTS_DIR}/icc/dump_results.tcl
