@@ -4,7 +4,7 @@ set DESIGN $DESIGN_NAME
 ##########################################################################################
 #         POR HACER!!!! REVISE QUE ESTAS RUTAS COINCIDAN CON LAS QUE ESTÁ TRABAJANDO
 ##########################################################################################
-set WORK_DIR "/home/JOSEPH.ALVAREZ/ie0411/proyecto/WORK" ; #ES NECESARIO MODIFICAR AL HOME USUARIO CORRECTO
+set WORK_DIR "/home/JOSEPH.ALVAREZ/ie0411/proyecto_comparacion/WORK" ; #ES NECESARIO MODIFICAR AL HOME USUARIO CORRECTO
 
 
 ##########################################################################################

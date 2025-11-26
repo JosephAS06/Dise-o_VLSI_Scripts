@@ -3,14 +3,14 @@ set_host_options -max_cores 16
 ##########################################################################################
 ## FLOORPLAN
 ##########################################################################################
-source ${SCRIPTS_DIR}/icc/floorplan.tcl
-save_block -as ${DESIGN}_2_post_floorplan
+#source ${SCRIPTS_DIR}/icc/floorplan.tcl
+#save_block -as ${DESIGN}_2_post_floorplan
 
 ##########################################################################################
 # DISTRIBUCIÓN DE POTENCIA
 ##########################################################################################
-source ${SCRIPTS_DIR}/icc/powerplan.tcl
-save_block -as ${DESIGN}_3_post_power
+#source ${SCRIPTS_DIR}/icc/powerplan.tcl
+#save_block -as ${DESIGN}_3_post_power
 
 ##########################################################################################
 # POSICIONAMIENTO

@@ -16,7 +16,7 @@ exec mkdir ${RESULTS_DIR} ${REPORTS_DIR}
 ##########################################################################################
 #         POR HACER!!!! REVISE QUE ESTAS RUTAS COINCIDAN CON LAS QUE ESTÁ TRABAJANDO
 ##########################################################################################
-set WDIR "/home/JOSEPH.ALVAREZ/ie0411/proyecto_loco/WORK" ; #ES NECESARIO MODIFICAR AL HOME USUARIO CORRECTO
+set WDIR "/home/JOSEPH.ALVAREZ/ie0411/proyecto_comparacion/WORK" ; #ES NECESARIO MODIFICAR AL HOME USUARIO CORRECTO
 set TOP ${WDIR}/..
 set verilog_path "/share/synopsys/libs/ie0411/AMBER_ARM_2CORE/verilog"
 set rtl_list_path "/share/synopsys/libs/ie0411/AMBER_ARM_2CORE/scripts/dc/rtl.list"
@@ -53,24 +53,36 @@ ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_dlvl_ss0p72v25c_i0p72v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_dlvl_tt0p8v25c_i0p8v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_dlvl_ff0p88v25c_i0p88v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_dlvl_ss0p72v25c_i0p72v.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_dlvl_tt0p8v25c_i0p8v.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_dlvl_ff0p88v25c_i0p88v.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_dlvl_ss0p72v25c_i0p72v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_pg_tt0p8v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_pg_ff0p88v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_pg_ss0p72v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_pg_tt0p8v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_pg_ff0p88v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_pg_ss0p72v25c.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_pg_tt0p8v25c.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_pg_ff0p88v25c.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_pg_ss0p72v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_tt0p8v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_ss0p72v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_ff0p88v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_ss0p72v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_ff0p88v25c.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_tt0p8v25c.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_ss0p72v25c.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_ff0p88v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_ulvl_tt0p8v25c_i0p8v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_ulvl_ss0p72v25c_i0p72v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_ulvl_ff0p88v25c_i0p88v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_ulvl_tt0p8v25c_i0p8v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_ulvl_ss0p72v25c_i0p72v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_ulvl_ff0p88v25c_i0p88v.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_ulvl_tt0p8v25c_i0p8v.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_ulvl_ss0p72v25c_i0p72v.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_ulvl_ff0p88v25c_i0p88v.db \
 ${DESIGN_REF_PATH}/lib/sram/logic_synth/single/saed14sram_tt0p8v25c.db \
 ${DESIGN_REF_PATH}/lib/sram/logic_synth/single/saed14sram_ss0p72v25c.db \
 ${DESIGN_REF_PATH}/lib/sram/logic_synth/single/saed14sram_ff0p88v25c.db \
@@ -95,24 +107,36 @@ ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_dlvl_ss0p72v25c_i0p72v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_dlvl_tt0p8v25c_i0p8v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_dlvl_ff0p88v25c_i0p88v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_dlvl_ss0p72v25c_i0p72v.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_dlvl_tt0p8v25c_i0p8v.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_dlvl_ff0p88v25c_i0p88v.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_dlvl_ss0p72v25c_i0p72v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_pg_tt0p8v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_pg_ff0p88v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_pg_ss0p72v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_pg_tt0p8v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_pg_ff0p88v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_pg_ss0p72v25c.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_pg_tt0p8v25c.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_pg_ff0p88v25c.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_pg_ss0p72v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_tt0p8v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_ss0p72v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_ff0p88v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_ss0p72v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_ff0p88v25c.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_tt0p8v25c.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_ss0p72v25c.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_ff0p88v25c.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_ulvl_tt0p8v25c_i0p8v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_ulvl_ss0p72v25c_i0p72v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_lvt/db_nldm/saed14lvt_ulvl_ff0p88v25c_i0p88v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_ulvl_tt0p8v25c_i0p8v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_ulvl_ss0p72v25c_i0p72v.db \
 ${DESIGN_REF_PATH}/lib/stdcell_rvt/db_nldm/saed14rvt_ulvl_ff0p88v25c_i0p88v.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_ulvl_tt0p8v25c_i0p8v.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_ulvl_ss0p72v25c_i0p72v.db \
+${DESIGN_REF_PATH}/lib/stdcell_hvt/db_nldm/saed14hvt_ulvl_ff0p88v25c_i0p88v.db \
 ${DESIGN_REF_PATH}/lib/sram/logic_synth/single/saed14sram_tt0p8v25c.db \
 ${DESIGN_REF_PATH}/lib/sram/logic_synth/single/saed14sram_ss0p72v25c.db \
 ${DESIGN_REF_PATH}/lib/sram/logic_synth/single/saed14sram_ff0p88v25c.db \
@@ -178,15 +202,15 @@ set auto_wire_load_selection true
 ##########################################################################################
 # CLOCK GATING (SIN PROBAR, BAJO SU PROPIO RIESGO)
 ##########################################################################################
-#set pos_cg_cells [get_lib_cells /CGLP]
-#set neg_cg_cells [get_lib_cells /CGLN]
+#set pos_cg_cells [get_lib_cells */CGLP*]
+#set neg_cg_cells [get_lib_cells */CGLN*]
 
 #foreach_in_coll pos_cg_cell $pos_cg_cells {
 #    set pos_cg_cell_name [get_attr [get_lib_cell $pos_cg_cell] full_name]
-#   set_attribute [get_lib_cell $pos_cg_cell_name] clock_gating_integrated_cell latch_posedge
+#    set_attribute [get_lib_cell $pos_cg_cell_name] clock_gating_integrated_cell latch_posedge
 #}
 #foreach_in_coll neg_cg_cell $neg_cg_cells {
-#   set neg_cg_cell_name [get_attr [get_lib_cell $neg_cg_cell] full_name]
+#    set neg_cg_cell_name [get_attr [get_lib_cell $neg_cg_cell] full_name]
 #    set_attribute [get_lib_cell $neg_cg_cell_name] clock_gating_integrated_cell latch_negedge
 #}
     
@@ -198,7 +222,7 @@ set auto_wire_load_selection true
 # CELDAS QUE NO SE DEBEN MODIFICAR
 set_verification_priority -all -high
 set_fix_multiple_port_nets -buffer_constants -feedthroughs -outputs -constants
-set dont_touch_cells [get_cells "u_wishbone_arbiter/m0_wb_cyc_r_reg u_eth_top/ethreg1/MODER_1/_reg"]
+set dont_touch_cells [get_cells "u_wishbone_arbiter/m0_wb_cyc_r_reg u_eth_top/ethreg1/MODER_1/*_reg*"]
 foreach_in_coll cell $dont_touch_cells {
 	set cell_name [get_object_name $cell]
 	#set_dont_touch [get_cells $cell_name]
@@ -213,14 +237,12 @@ foreach_in_coll cell $dont_touch_cells {
 }
 
 # CARGA DE CONSTRAINTS
-source -e -v "/home/JOSEPH.ALVAREZ/ie0411/proyecto_loco/scripts/dc/constraints.sdc"
+source -e -v "/home/JOSEPH.ALVAREZ/ie0411/proyecto_comparacion/scripts/dc/constraints.sdc"
 
 set_app_var compile_timing_high_effort_tns true
 compile_ultra -exact_map -no_autoungroup -gate_clock -retime
 optimize_registers -minimum_period_only -justification_effort high
 compile_ultra -exact_map -no_autoungroup -incremental
-
-
 ##########################################################################################
 # RESULTADOS DE SINTESIS
 ##########################################################################################
