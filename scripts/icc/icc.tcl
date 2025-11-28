@@ -20,7 +20,7 @@ source $COMMON_SETUP_SCRIPT
 # INICIALIZACIÓN DE LA LIBRERÍA
 ###################################################################################
 
-set_host_options -max_cores 16
+set_host_options -max_cores 8
 
 set link_library   $LINK_LIBRARY_FILES
 set target_library $TARGET_LIBRARY_FILES
@@ -128,8 +128,8 @@ save_block -as ${DESIGN}_6_post_route
 ##########################################################################################
 # ECO
 ##########################################################################################
-#source ${SCRIPTS_DIR}/icc/eco.tcl
-#save_block -as ${DESIGN}_7_post_eco
+source ${SCRIPTS_DIR}/icc/eco.tcl
+save_block -as ${DESIGN}_7_post_eco
 
 ##########################################################################################
 # GENERACIÓN DE RESULTADOS
